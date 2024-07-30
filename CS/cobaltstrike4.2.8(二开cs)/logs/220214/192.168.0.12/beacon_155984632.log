@@ -1,0 +1,5 @@
+02/14 03:48:42 UTC [metadata] 123.180.208.228 <- 192.168.0.12; computer: SERVER11; user: Administrator *; process: scvhost.exe; pid: 9684; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+02/14 03:56:35 UTC [metadata] 101.26.255.125 <- 192.168.0.12; computer: SERVER11; user: Administrator *; process: scvhost.exe; pid: 9684; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+02/14 07:02:24 UTC [metadata] 123.180.208.228 <- 192.168.0.12; computer: SERVER11; user: Administrator *; process: scvhost.exe; pid: 9684; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+02/14 07:24:57 UTC [metadata] 101.26.255.125 <- 192.168.0.12; computer: SERVER11; user: Administrator *; process: scvhost.exe; pid: 9684; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+02/14 08:39:30 UTC [metadata] 101.26.255.125 <- 192.168.0.12; computer: SERVER11; user: Administrator *; process: scvhost.exe; pid: 9684; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)

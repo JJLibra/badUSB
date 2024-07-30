@@ -1,0 +1,6 @@
+11/05 04:58:40 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: artifact.exe; pid: 17152; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/05 04:58:52 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 04:58:52 UTC [note] Bid: 1770417968  NT: 6.2
+11/05 04:58:54 UTC [checkin] host called home, sent: 16 bytes
+11/05 05:01:22 UTC [input] <neo> net view
+11/05 05:01:22 UTC [task] <T1018, T1093> Tasked beacon to run net view

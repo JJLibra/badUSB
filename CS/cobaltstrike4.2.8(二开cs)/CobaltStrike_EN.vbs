@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").Run "java -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -jar cobaltstrike.jar $*",0

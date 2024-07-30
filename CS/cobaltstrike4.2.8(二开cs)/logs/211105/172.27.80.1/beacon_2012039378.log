@@ -1,0 +1,4 @@
+11/05 04:53:00 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: beacon.exe; pid: 30148; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/05 04:52:51 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 04:52:51 UTC [note] Bid: 2012039378  NT: 6.2
+11/05 04:52:56 UTC [checkin] host called home, sent: 16 bytes

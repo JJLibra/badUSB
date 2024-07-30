@@ -1,0 +1,5 @@
+02/23 05:01:40 UTC [metadata] 101.26.254.165 <- 192.168.0.8; computer: SERVER-8; user: SYSTEM *; process: rundll32.exe; pid: 3584; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+02/23 05:05:06 UTC [metadata] 101.26.253.223 <- 192.168.0.8; computer: SERVER-8; user: SYSTEM *; process: rundll32.exe; pid: 3584; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+02/23 05:23:46 UTC [metadata] 123.180.211.119 <- 192.168.0.8; computer: SERVER-8; user: SYSTEM *; process: rundll32.exe; pid: 3584; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+02/23 05:24:58 UTC [metadata] 123.180.211.119 <- 192.168.0.8; computer: SERVER-8; user: SYSTEM *; process: rundll32.exe; pid: 3584; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+02/23 05:26:25 UTC [metadata] 123.180.211.119 <- 192.168.0.8; computer: SERVER-8; user: SYSTEM *; process: rundll32.exe; pid: 3584; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)

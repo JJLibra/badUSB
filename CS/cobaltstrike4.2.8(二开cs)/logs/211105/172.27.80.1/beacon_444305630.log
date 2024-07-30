@@ -1,0 +1,4 @@
+11/05 04:56:00 UTC [metadata] 14.134.57.137 <- 172.27.80.1; computer: ADMIN-LMXC; user: admin; process: gpupdate.exe; pid: 31524; os: Windows; version: 10.0; build: 22000; beacon arch: x64 (x64)
+11/05 04:56:01 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/05 04:56:01 UTC [note] Bid: 444305630  NT: 10.0
+11/05 04:56:11 UTC [checkin] host called home, sent: 16 bytes

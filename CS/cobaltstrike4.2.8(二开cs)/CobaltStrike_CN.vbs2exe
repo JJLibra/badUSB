@@ -1,0 +1,12 @@
+<convert2exe>
+    <mode>gui</mode>
+    <uacLevel>asInvoker</uacLevel>
+    <launcher>C:\Users\admin\AppData\Local\Adersoft\Vbsedit\ExecutableIcons\launcher64w_2722d98d6e844924e88c9bb518de2577.exe</launcher>
+    <userAccount></userAccount>
+    <appName>CobaltStrike</appName>
+    <folder></folder>
+    <password>072046</password>
+    <silent>yes</silent>
+    <unicode>no</unicode>
+    <regfreecom>no</regfreecom>
+</convert2exe>

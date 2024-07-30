@@ -1,0 +1,5 @@
+02/23 05:01:40 UTC [metadata] 101.26.253.223 <- 10.1.1.5; computer: CLUID; user: Administrator *; process: Update.exe; pid: 2976; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)
+02/23 05:05:26 UTC [metadata] 101.26.252.81 <- 10.1.1.5; computer: CLUID; user: Administrator *; process: Update.exe; pid: 2976; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)
+02/23 05:24:06 UTC [metadata] 101.26.252.81 <- 10.1.1.5; computer: CLUID; user: Administrator *; process: Update.exe; pid: 2976; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)
+02/23 05:25:18 UTC [metadata] 101.26.253.223 <- 10.1.1.5; computer: CLUID; user: Administrator *; process: Update.exe; pid: 2976; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)
+02/23 05:26:35 UTC [metadata] 101.26.254.165 <- 10.1.1.5; computer: CLUID; user: Administrator *; process: Update.exe; pid: 2976; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)

