@@ -5,10 +5,23 @@
 #include <QTextStream>
 #include <QCryptographicHash>
 #include <QRandomGenerator>
-#include <QByteArray>
-
-// 假设你已经有 QAESEncryption 库
 #include "qaesencryption.h"
+
+QByteArray generateRandomBytes(int length)
+{
+    QByteArray bytes(length, 0);
+    for (int i = 0; i < length; ++i)
+    {
+        bytes[i] = static_cast<char>(QRandomGenerator::global()->generate() % 256);
+    }
+    return bytes;
+}
+
+QByteArray aesEncrypt(const QByteArray& plaintext, const QByteArray& key, const QByteArray& iv)
+{
+    QAESEncryption encryption(QAESEncryption::AES_256, QAESEncryption::CBC);
+    return encryption.encode(plaintext, key, iv);
+}
 
 void handleTxtFiles()
 {
@@ -25,16 +38,11 @@ void handleTxtFiles()
             QString content = stream.readAll();
             file.close();
 
-            // 生成随机 AES 密钥
-            QByteArray key = QCryptographicHash::hash(QByteArray::number(QRandomGenerator::global()->generate()), QCryptographicHash::Sha256);
-            QByteArray iv = QCryptographicHash::hash(QByteArray::number(QRandomGenerator::global()->generate()), QCryptographicHash::Md5);
-
-            // 使用 AES 加密内容
-            QAESEncryption encryption(QAESEncryption::AES_256, QAESEncryption::CBC);
-            QByteArray encrypted = encryption.encode(content.toUtf8(), key, iv);
-
-            // 保存加密后的内容
-            QString encryptedFilename = filename + ".enc";
+            // 生成随机 AES 密钥和 IV
+            QByteArray key = generateRandomBytes(32); // 256 位密钥
+            QByteArray iv = generateRandomBytes(16); // 128 位 IV
+            QByteArray encrypted = aesEncrypt(content.toUtf8(), key, iv); // 使用 AES 加密内容
+            QString encryptedFilename = filename + ".enc"; // 保存加密后的内容
             QFile encryptedFile(dir.absoluteFilePath(encryptedFilename));
             if (encryptedFile.open(QIODevice::WriteOnly))
             {
@@ -42,8 +50,7 @@ void handleTxtFiles()
                 encryptedFile.close();
             }
 
-            // 删除原始文件
-            file.remove();
+            file.remove(); // 删除原始文件
         }
     }
 }
