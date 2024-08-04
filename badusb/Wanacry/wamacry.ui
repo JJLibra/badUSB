@@ -14,7 +14,7 @@
    <enum>Qt::DefaultContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>Wama Decrypt0r 3.0</string>
+   <string>XXFER Decrypt0r</string>
   </property>
   <property name="windowIcon">
    <iconset resource="wamacry.qrc">

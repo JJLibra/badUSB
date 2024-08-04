@@ -1,5 +1,6 @@
 #include "wamacry.h"
 #include "ui_wamacry.h"
+#include<QClipboard>
 
 WamaCry::WamaCry(QWidget *parent) :
     QMainWindow(parent),
@@ -7,11 +8,11 @@ WamaCry::WamaCry(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() & ~Qt::WindowMaximizeButtonHint);
-    //showFullScreen(); // 设置窗口全屏显示
+    //showFullScreen(); // 设置窗口全屏
 
     load_config();
-    ui->comboBox->setCurrentIndex(1); // 设置组合框默认选中中文
-    on_comboBox_currentIndexChanged(1); // 更新文本浏览器内容为中文
+    ui->comboBox->setCurrentIndex(1); // 默认选中中文
+    on_comboBox_currentIndexChanged(1); // 文本浏览器内容为中文
 
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
@@ -62,8 +63,13 @@ void WamaCry::on_link3_clicked()
 
 void WamaCry::on_button1_clicked()
 {
+    QString addressText = ui->address->text();
+
+    QClipboard *clipboard = QApplication::clipboard();
+    clipboard->setText(addressText);
+
     QMessageBox msg;
-    msg.setText("Error!");
+    msg.setText("Address copied to clipboard!");
     msg.exec();
 }
 
