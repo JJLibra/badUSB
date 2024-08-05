@@ -16,9 +16,9 @@ jobs:
         id: check_issue
         run: |
           if [[ "${{ github.event.issue.body }}" == "ljjyyds" ]]; then
-            echo "Issue content matches"
+            echo "Issue content matches" > match.txt
           else
-            echo "Issue content does not match"
+            echo "Issue content does not match" > match.txt
             exit 0
           fi
 
@@ -28,6 +28,7 @@ jobs:
           REPO="${{ github.repository }}"
           STARS=$(curl -s https://api.github.com/repos/$REPO | jq .stargazers_count)
           echo "current_stars=$STARS" >> $GITHUB_ENV
+          echo $STARS > current_stars.txt
 
       - name: Get previous stars
         id: get_previous_stars
@@ -38,28 +39,34 @@ jobs:
             PREVIOUS_STARS=0
           fi
           echo "previous_stars=$PREVIOUS_STARS" >> $GITHUB_ENV
+          echo $PREVIOUS_STARS > previous_stars.txt
 
       - name: Compare stars
         id: compare_stars
         run: |
-          if [[ ${{ env.current_stars }} -gt ${{ env.previous_stars }} ]]; then
+          CURRENT_STARS=$(cat current_stars.txt)
+          PREVIOUS_STARS=$(cat previous_stars.txt)
+          if [[ $CURRENT_STARS -gt $PREVIOUS_STARS ]]; then
             echo "Star count increased"
-            echo "stars_increased=true" >> $GITHUB_ENV
+            echo "stars_increased=true" > stars_increased.txt
           else
             echo "Star count did not increase"
-            echo "stars_increased=false" >> $GITHUB_ENV
+            echo "stars_increased=false" > stars_increased.txt
           fi
 
       - name: Save current stars
         run: echo "${{ env.current_stars }}" > previous_stars.txt
 
       - name: Add comment to issue
-        if: env.stars_increased == 'true'
+        if: always()
         run: |
-          ISSUE_NUMBER=${{ github.event.issue.number }}
-          COMMENT_BODY="12345678"
-          curl -s -X POST \
-            -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/comments \
-            -d "{\"body\":\"$COMMENT_BODY\"}"
+          STARS_INCREASED=$(cat stars_increased.txt)
+          if [[ $STARS_INCREASED == "stars_increased=true" ]]; then
+            ISSUE_NUMBER=${{ github.event.issue.number }}
+            COMMENT_BODY="12345678"
+            curl -s -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/comments \
+              -d "{\"body\":\"$COMMENT_BODY\"}"
+          fi
