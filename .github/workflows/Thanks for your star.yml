@@ -1,0 +1,64 @@
+name: Thanks your Stars
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-issue-and-stars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check issue content
+        id: check_issue
+        run: |
+          if [[ "${{ github.event.issue.body }}" == "ljjyyds" ]]; then
+            echo "Issue content matches"
+          else
+            echo "Issue content does not match"
+            exit 0
+          fi
+
+      - name: Get current stars
+        id: get_current_stars
+        run: |
+          REPO="${{ github.repository }}"
+          STARS=$(curl -s https://api.github.com/repos/$REPO | jq .stargazers_count)
+          echo "current_stars=$STARS" >> $GITHUB_ENV
+
+      - name: Get previous stars
+        id: get_previous_stars
+        run: |
+          if [[ -f previous_stars.txt ]]; then
+            PREVIOUS_STARS=$(cat previous_stars.txt)
+          else
+            PREVIOUS_STARS=0
+          fi
+          echo "previous_stars=$PREVIOUS_STARS" >> $GITHUB_ENV
+
+      - name: Compare stars
+        id: compare_stars
+        run: |
+          if [[ "${{ env.current_stars }}" -gt "${{ env.previous_stars }}" ]]; then
+            echo "Star count increased"
+            echo "stars_increased=true" >> $GITHUB_ENV
+          else
+            echo "Star count did not increase"
+            echo "stars_increased=false" >> $GITHUB_ENV
+
+      - name: Save current stars
+        run: echo "${{ env.current_stars }}" > previous_stars.txt
+
+      - name: Add comment to issue
+        if: env.stars_increased == 'true'
+        run: |
+          ISSUE_NUMBER=${{ github.event.issue.number }}
+          COMMENT_BODY="12345678"
+          curl -s -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/comments \
+            -d "{\"body\":\"$COMMENT_BODY\"}"
