@@ -48,6 +48,7 @@ jobs:
           else
             echo "Star count did not increase"
             echo "stars_increased=false" >> $GITHUB_ENV
+          fi
 
       - name: Save current stars
         run: echo "${{ env.current_stars }}" > previous_stars.txt
