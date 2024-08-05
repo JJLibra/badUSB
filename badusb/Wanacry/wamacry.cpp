@@ -8,7 +8,7 @@ WamaCry::WamaCry(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() & ~Qt::WindowMaximizeButtonHint);
-    //showFullScreen(); // 设置窗口全屏
+    // showFullScreen(); // 设置窗口全屏
 
     load_config();
     ui->comboBox->setCurrentIndex(1); // 默认选中中文

