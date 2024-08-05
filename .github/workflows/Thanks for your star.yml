@@ -42,7 +42,7 @@ jobs:
       - name: Compare stars
         id: compare_stars
         run: |
-          if [[ "${{ env.current_stars }}" -gt "${{ env.previous_stars }}" ]]; then
+          if [[ ${{ env.current_stars }} -gt ${{ env.previous_stars }} ]]; then
             echo "Star count increased"
             echo "stars_increased=true" >> $GITHUB_ENV
           else
