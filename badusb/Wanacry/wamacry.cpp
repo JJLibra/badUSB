@@ -58,7 +58,7 @@ void WamaCry::on_link2_clicked()
 
 void WamaCry::on_link3_clicked()
 {
-    QDesktopServices::openUrl(QUrl("https://github.com/bitdust/WamaCry/issues/1"));
+    QDesktopServices::openUrl(QUrl("https://github.com/JJLibra/badUSB/issues/1"));
 }
 
 void WamaCry::on_button1_clicked()
