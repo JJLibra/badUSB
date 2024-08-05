@@ -7,7 +7,8 @@ WamaCry::WamaCry(QWidget *parent) :
     ui(new Ui::WamaCry)
 {
     ui->setupUi(this);
-    setWindowFlags(windowFlags() & ~Qt::WindowMaximizeButtonHint);
+    //setWindowFlags(windowFlags() & ~Qt::WindowMaximizeButtonHint);
+    setWindowFlags(Qt::FramelessWindowHint | Qt::Window); // 去除窗口边框
     // showFullScreen(); // 设置窗口全屏
 
     load_config();
