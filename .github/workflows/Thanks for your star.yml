@@ -63,7 +63,7 @@ jobs:
           STARS_INCREASED=$(cat stars_increased.txt)
           if [[ $STARS_INCREASED == "stars_increased=true" ]]; then
             ISSUE_NUMBER=${{ github.event.issue.number }}
-            COMMENT_BODY="12345678"
+            COMMENT_BODY="AES Key: 3f83ae9f205a47f81bc903c3e97f9811088f15d83a6b7b2640f78070c03f9d29\nIV: 11a30118a95d2b0c17b6c6f531cf2ab6"
             curl -s -X POST \
               -H "Accept: application/vnd.github.v3+json" \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
