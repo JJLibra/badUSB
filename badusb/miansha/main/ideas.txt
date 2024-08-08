@@ -1,0 +1,12 @@
+1、分离 shellcode 和 loader
+2、加密 AES + Base64
+3、加花
+4、序列化/反序列化 pickle
+5、进程绑定
+6、反编译 pyinstaller -F -w -i icon.ico --key LjjYYDS main.py
+
+反沙箱：
+异或反沙箱签名
+系统文件、系统名称、CPU个数、物理内存大小、开机时间、鼠标移动间隔
+
+反编译 pyinstxtractor

@@ -5,6 +5,7 @@ from datetime import datetime
 
 # 加花干扰函数
 def add(x, y):
+    num_array1 = [random.randint(1, 100) for i in range(100)]
     return x + y
 
 
@@ -104,3 +105,11 @@ def translate(word):
         return translation_dict[word]
     else:
         return None
+
+
+def addTrash():
+    print(get_grade(85))
+    print(calculate_average(num_array))
+    print(concatenate_strings("hello", "world"))
+    print(is_sorted(num_array))
+    print(is_palindrome("radar"))

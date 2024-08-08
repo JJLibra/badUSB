@@ -1,6 +1,18 @@
 import os
 import psutil
 from multiprocessing import cpu_count
+import ctypes
+
+GetTickCount64 = ctypes.windll.kernel32.GetTickCount64
+Sleep = ctypes.windll.kernel32.Sleep
+
+
+def is_sandbox():
+    start_tick = GetTickCount64()
+    Sleep(300)  # 暂停300毫秒
+    end_tick = GetTickCount64()
+    elapsed = end_tick - start_tick
+    return elapsed - 300 > 100  # 检查实际暂停时间是否显著小于预期时间
 
 
 def check_file():
