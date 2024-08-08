@@ -4,6 +4,7 @@
 3、加花
 4、序列化/反序列化 pickle
 5、进程绑定
+6、反编译 pyinstaller -F -w -i icon.ico --key LjjYYDS main.py
 
 反沙箱：
 异或反沙箱签名
